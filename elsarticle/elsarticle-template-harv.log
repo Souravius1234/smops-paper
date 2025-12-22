@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  22 DEC 2025 14:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  22 DEC 2025 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,24 +588,24 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 151.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 178.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 153.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 180.
 (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 178.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 180.
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 178.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 180.
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 178.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 180.
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 178.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 180.
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
@@ -615,44 +615,44 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 196.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 198.
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 3039) in paragraph at lines 224--225
+Underfull \hbox (badness 3039) in paragraph at lines 226--227
 []\T1/txr/m/n/10 In the Cir-cu-lar Re-stricted Three-Body Prob-lem
  []
 
 
-LaTeX Warning: Reference `subsec1' on page 2 undefined on input line 237.
+LaTeX Warning: Reference `subsec1' on page 2 undefined on input line 239.
 
 [2]
 <example-image-a.pdf, id=16, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 319.
+Package pdftex.def Info: example-image-a.pdf  used on input line 321.
 (pdftex.def)             Requested size: 234.0pt x 175.50632pt.
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 319--321
+Overfull \hbox (12.0pt too wide) in paragraph at lines 321--323
 [][] 
  []
 
 
-Package natbib Warning: Citation `lamport94' on page 3 undefined on input line 338.
+Package natbib Warning: Citation `lamport94' on page 3 undefined on input line 340.
 
 Runaway argument?
 { 
-c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-harv.tex:353: Paragraph ended before \bibliography was complete.
+c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-harv.tex:355: Paragraph ended before \bibliography was complete.
 <to be read again> 
                    \par 
-l.353 
+l.355 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-harv.tex:354: Too many }'s.
-l.354 }
+c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-harv.tex:356: Too many }'s.
+l.356 }
        
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
