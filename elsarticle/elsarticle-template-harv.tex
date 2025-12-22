@@ -41,6 +41,7 @@
 \usepackage{amsmath}
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
+\usepackage{fancyhdr}
 
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
@@ -208,6 +209,17 @@ The system may be described using the following relations.
     \ddot z = \Omega_z
 \end{equation}
 
+where, $\Omega$ is the pseudo-potential given by,
+\begin{equation}
+    \Omega = \frac{1}{2}(x^2 + y^2) + \frac{1-\mu}{r_1} + \frac{\mu}{r_2}
+\end{equation}
+\begin{equation}
+    r_1 = \sqrt{(x+\mu)^2 + y^2 + z^2}
+\end{equation}
+\begin{equation}
+    r_2 = \sqrt{(x-1+\mu)^2 + y^2 + z^2}
+\end{equation}
+
 \subsection{Realms of Possible Motion}
 In the Circular Restricted Three-Body Problem (CR3BP), a spacecraft's movement is restricted to specific spatial realms based on its energy level. This energy state is defined by a conserved value called the Jacobi constant, which determines the boundaries of where the craft can physically travel according to the following expression:
 \begin{equation}
@@ -337,6 +349,10 @@ Example citation, See \citet{lamport94}.
 %% Refer following link for more details about bibliography and citations.
 %% https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
 
+\bibliography{
+
+}
+
 \begin{thebibliography}{00}
 
 %% For authoryear reference style
@@ -349,20 +365,6 @@ Example citation, See \citet{lamport94}.
   Addison Wesley, Massachusetts,
   2nd edition,
   1994.
-
-
-@article{Boone2025,
-   abstract = {Spacecraft breakup events are simulated in the vicinity of the Lunar Gateway’s planned near-rectilinear halo orbit and a 70,000 km radius lunar distant retrograde orbit similar to that used during the Artemis I mission. For each scenario, realistic Monte Carlo simulations consisting of 5000 breakup events and over a million debris fragments enable a statistical evaluation of the longevity of debris in the pre-breakup orbit, the locations of lunar surface impacts, and the conjunction risks to other spacecraft such as the Gateway. Conjunction risks are quantified in terms of the likelihood of observing close approaches within specified distances. The near-rectilinear halo orbit simulations focus on modeling a scenario in which an object suffers a breakup event shortly after deployment from the Gateway, and deployment strategies to reduce the risk to the Gateway are identified, such as a minimum deployment change in velocity of 4 m/s and deployment only at perilune. Conjunctions within 5 km were rare, but approaches within 500 km occurred in the majority of simulation runs, which may generate concern given tracking limitations in cislunar space. Debris was not stable in the vicinity of the near-rectilinear halo orbit but could remain stable in the distant retrograde orbit for at least 10 years. The results of this study provide quantifiable insight into the risk of close approaches between debris and cislunar spacecraft such as the Gateway and identify strategies that can be used to develop operational plans to mitigate this risk.},
-   author = {Nathan R. Boone and Robert A. Bettinger and Bryan D. Little},
-   doi = {10.2514/1.A36072},
-   issn = {0022-4650},
-   journal = {Journal of Spacecraft and Rockets},
-   month = {7},
-   pages = {1-17},
-   title = {Simulation of Debris Events in Cislunar Orbits Near the Moon},
-   url = {https://arc.aiaa.org/doi/10.2514/1.A36072},
-   year = {2025}
-}
 
 \end{thebibliography}
 \end{document}
