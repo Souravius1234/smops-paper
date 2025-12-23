@@ -234,12 +234,12 @@ The cislunar region, the vast expanse between the Earth and Moon, is emerging as
     \caption{NRHO Orbit}\label{fig2}
 \end{figure}
 
-This study seeks to address the emerging challenge of debris risk in the cislunar space environment. By modeling and simulating key scenarios, including in-orbit break-up events, high-energy impact trajectories, and long-term orbital evolution, we aim to assess potential debris propagation patterns and their associated hazards. In particular, we investigate how fragments from operational failures or collisions might interact with valuable regions such as Earth-Moon Lagrange points, lunar transfer corridors, lunar orbit, and also near-Earth regions such Geostationary and Geosynchronous orbits. These insights are critical for informing the design of future space traffic management protocols, shielding strategies, and operational policies that will ensure the safety, sustainability, and success of humanity’s next great leap into space. Results presented demonstrate the spread of the debris field over time based on Monte-Carlo simulations of a breakup event in the NRHO and the Distant Retrograde orbit (DRO). 
+This study seeks to address the emerging challenge of debris risk in the cislunar space environment. By modeling and simulating key scenarios, including in-orbit break-up events, high-energy impact trajectories, and long-term orbital evolution, we aim to assess potential debris propagation patterns and their associated hazards. In particular, we investigate how fragments from operational failures or collisions might interact with valuable regions such as Earth-Moon Lagrange points, lunar transfer corridors, lunar orbit, and also near-Earth regions such Geostationary and Geosynchronous orbits. These insights are critical for informing the design of future space traffic management protocols, shielding strategies, and operational policies that will ensure the safety, sustainability, and success of humanity’s next great leap into space. Results presented demonstrate the spread of the debris field over time based on Monte-Carlo simulations of a breakup event in the NRHO, a Distant Retrograde orbit (DRO), and a $\text{L}_2$ Halo Orbit.
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.45\textwidth]{figs/fig3x.png}
-    \caption{NASA's Lunar Gateway (Artemis Program)}\label{fig2a}
+    \caption{NASA's Lunar Gateway (Artemis Program) \cite{zubrin2023}}\label{fig2a}
 \end{figure}
 
 \section{Dynamics Model}
@@ -259,7 +259,7 @@ The complex dynamics of the region can be simplified using the Circular Restrict
     \item The third body is assumed to be a point mass and exerts no force on the other masses.
 \end{itemize}
 
-The system may be described using the following relations.
+The system may be described using the following relations \cite{ross2022}.
 
 \begin{equation}
     \ddot x - 2 \dot y = \Omega_x
@@ -298,8 +298,9 @@ Figure \ref{fig5} illustrates these realms through the use of zero-velocity surf
 
 \begin{figure}[t]
     \centering
+    \captionsetup{justification=centering}
     \includegraphics[width=0.45\textwidth]{figs/fig5.png}
-    \caption{Realms of Possible Motion for different Jacobi Constant $E$}\label{fig5}
+    \caption{Realms of Possible Motion for different Jacobi Constant values $E$ \cite{ross2022}}\label{fig5}
 \end{figure}
 
 \subsection{Propagator Setup}
@@ -313,13 +314,13 @@ A Variable-Step, Variable-Order (VSVO) Adams-Bashforth-Moulton integrator referr
 \label{sec3.1}
 
 Spacecraft breakup events may be classified into two main types, collisions and explosions. It is very challenging to accurately model a spacecraft breakup event, since it involves several aspects such as the energy released during the event, the materials of the spacecraft, and several other quantities. Based on observations from events in the near-Earth orbits, NASA developed an empirical model referred to as EVOLVE 4.0. This model gives a good estimate of the number of fragments, their size distribution as a function of the parent satellitess size, fragment area and masses, and also the type of event. 
-The characteristic length of any fragment is given by the relation:
+The characteristic length of any fragment is given by the relation \cite{apetrii2024}:
 
 \begin{equation}
     L_c = \frac{1}{3} (X + Y + Z)
 \end{equation}
 
-Based on this, we may obtain the size distribution of fragments from an explosion and collision event respectively given by:
+Based on this, we may obtain the size distribution of fragments from an explosion and collision event respectively given by \cite{apetrii2024}:
 
 \begin{equation}
     N_{\text{frag}}^{\text{exp}} = 6L_c^{-\beta_{\text{exp}}}
@@ -366,8 +367,8 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
 
 \subsection{Long Term Propagation}
 
-As stated in section \ref{sec3.2} and \ref{3.3}, 1000 Monte-Carlo runs of debris is propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
-
+As stated in section \ref{sec3.2} and \ref{sec3.3}, 1000 Monte-Carlo runs of debris is propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
+ADD ALL THE FOOKING PICTURES OF THE HEATMAPS HERE.
 %% Add \usepackage{lineno} before \begin{document} and uncomment 
 %% following line to enable line numbers
 %% \linenumbers
@@ -471,11 +472,11 @@ f(x) = (x+a)(x+b)
 
 %% The Appendices part is started with the command \appendix;
 %% appendix sections are then done as normal sections
-\appendix
-\section{Example Appendix Section}
-\label{app1}
+% \appendix
+% \section{Example Appendix Section}
+% \label{app1}
 
-Appendix text.
+% Appendix text.
 
 %% For citations use: 
 %%       \citet{<label>} ==> Lamport [21]
@@ -513,6 +514,23 @@ Appendix text.
     \textit{Recognising Sustainable Behaviour},
     \url{https://www.esa.int/Space_Safety/Space_Debris/Recognising_sustainable_behaviour},
     2019.
+
+\bibitem[Zubrin(2023)]{zubrin2023}
+    Zubrin, R.,
+    OP-ED | Lunar Gateway or Moon Direct? 
+    \url{SpaceNews. https://spacenews.com/op-ed-lunar-gateway-or-moon-direct/},
+    2023.
+
+\bibitem[Ross(2022)]{ross2022}
+    Koon, W.S., Lo, M.W., Marsden, J.E., Ross, S.D. (2022) 
+    Dynamical Systems, the Three-Body Problem and Space Mission Design. 
+    Marsden Books, 
+    ISBN 978-0-615-24095-4.
+
+\bibitem{apetrii2024}
+    Apetrii, M., Celletti, A., Efthymiopoulos, C., Galeş, C., Vartolomei, T. (2024). 
+    Simulating a breakup event and propagating the orbits of space debris. Celestial Mechanics and Dynamical Astronomy, 136(5).,
+    \url{https://doi.org/10.1007/s10569-024-10205-3}.
 
 \end{thebibliography}
 \end{document}
