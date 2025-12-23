@@ -355,6 +355,18 @@ Based on EVOLVE 4.0, Monte-Carlo based simulations are done to generate debris f
     \Delta v_z = \Delta v u
 \end{equation}
 where, $u$ is a random number uniformly sampled between -1 and 1, and $\theta$ is a random angle sampled between 0 and $2\pi$. The initial mass of the parent satellite is considered to be 1000 kg, and the characteristic lengths of fragments is sampled between 10 cm and 1 m. 1000 runs were performed, and three main orbits were analyzed, which include the Near-Rectilinear Halo Orbit (NRHO), a Distant Retrograde Orbit (DRO), and a $\text{L}_2$ Halo orbit. Each fragment is then propagated over a period of 3, 6, 9, 12, and 60 months to demonstrate their behaviour over a long duration of time. 
+The initial positions of each fragment is randomized within a radius of 500 m. 
+
+\subsection{Collisions with the Moon and the Lunar Gateway}
+\label{sec3.3}
+Upon propagation, fragments observed hitting the Moon or approaching close to the Lunar Gateway in the NRHO are flagged. This helps with assessing the collision risk, and also the potential risks of debris in the region.
+
+\section{Simulations}
+\label{sec4}
+
+\subsection{Long Term Propagation}
+
+As stated in section \ref{sec3.2} and \ref{3.3}, 1000 Monte-Carlo runs of debris is propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
 
 %% Add \usepackage{lineno} before \begin{document} and uncomment 
 %% following line to enable line numbers

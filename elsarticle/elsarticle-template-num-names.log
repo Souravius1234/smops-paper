@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.23)  23 DEC 2025 14:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.23)  23 DEC 2025 17:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,7 +743,7 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 20
  (C:\Users\Sourav.Ghosh\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-<figs/fig1.jpg, id=51, 1927.2pt x 1085.05376pt>
+<figs/fig1.jpg, id=63, 1927.2pt x 1085.05376pt>
 File: figs/fig1.jpg Graphic file (type jpg)
 <use figs/fig1.jpg>
 Package pdftex.def Info: figs/fig1.jpg  used on input line 213.
@@ -769,7 +769,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
  <./figs/fig1.jpg>]
-<figs/fig4.png, id=74, 644.4075pt x 511.9125pt>
+<figs/fig4.png, id=86, 644.4075pt x 511.9125pt>
 File: figs/fig4.png Graphic file (type png)
 <use figs/fig4.png>
 Package pdftex.def Info: figs/fig4.png  used on input line 233.
@@ -777,12 +777,12 @@ Package pdftex.def Info: figs/fig4.png  used on input line 233.
 
 Underfull \vbox (badness 2875) has occurred while \output is active []
 
-<figs/fig3x.png, id=75, 1003.75pt x 564.1075pt>
+<figs/fig3x.png, id=87, 1003.75pt x 564.1075pt>
 File: figs/fig3x.png Graphic file (type png)
 <use figs/fig3x.png>
 Package pdftex.def Info: figs/fig3x.png  used on input line 241.
 (pdftex.def)             Requested size: 210.59857pt x 118.35417pt.
-<figs/fig2.png, id=76, 1011.78pt x 976.64874pt>
+<figs/fig2.png, id=88, 1011.78pt x 976.64874pt>
 File: figs/fig2.png Graphic file (type png)
 <use figs/fig2.png>
 Package pdftex.def Info: figs/fig2.png  used on input line 252.
@@ -791,7 +791,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 25
  (C:\Users\Sourav.Ghosh\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [2 <./figs/fig4.png> <./figs/fig3x.png> <./figs/fig2.png>]
-<figs/fig3.png, id=87, 957.5775pt x 734.745pt>
+<figs/fig3.png, id=99, 957.5775pt x 734.745pt>
 File: figs/fig3.png Graphic file (type png)
 <use figs/fig3.png>
 Package pdftex.def Info: figs/fig3.png  used on input line 276.
@@ -801,23 +801,27 @@ Underfull \hbox (badness 3039) in paragraph at lines 293--294
 []\T1/txr/m/n/10 In the Cir-cu-lar Re-stricted Three-Body Prob-lem
  []
 
-<figs/fig5.png, id=89, 929.4725pt x 712.6625pt>
+<figs/fig5.png, id=101, 929.4725pt x 712.6625pt>
 File: figs/fig5.png Graphic file (type png)
 <use figs/fig5.png>
 Package pdftex.def Info: figs/fig5.png  used on input line 301.
 (pdftex.def)             Requested size: 210.59857pt x 161.47307pt.
 [3 <./figs/fig3.png> <./figs/fig5.png>]
-Underfull \hbox (badness 4792) in paragraph at lines 500--504
+
+LaTeX Warning: Reference `3.3' on page 4 undefined on input line 369.
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 512--516
 []\T1/txr/m/n/10 European Space Agency: \T1/txr/m/it/10 Recog-nis-ing Sus-
  []
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 500--504
+Underfull \hbox (badness 6284) in paragraph at lines 512--516
 \T1/txr/m/it/10 tain-able Be-haviour\T1/txr/m/n/10 , []$\T1/cmtt/m/n/10 https : / / www . esa . int /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--504
+Underfull \hbox (badness 10000) in paragraph at lines 512--516
 \T1/cmtt/m/n/10 Space _ Safety / Space _ Debris / Recognising _
  []
 
@@ -826,21 +830,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--504
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `elsarticle-template-num-names.out' has not changed.
-(rerunfilecheck)             Checksum: 35CEE9D447318479E25A31878B89DF9D;1957.
+(rerunfilecheck)             Checksum: 7B42D3D51C7B6DF6F42281FF1E4A824F;2534.
  ) 
 Here is how much of TeX's memory you used:
- 13887 strings out of 467871
- 217498 string characters out of 5414987
- 631175 words of memory out of 5000000
- 42508 multiletter control sequences out of 15000+600000
+ 13896 strings out of 467871
+ 217597 string characters out of 5414987
+ 634288 words of memory out of 5000000
+ 42514 multiletter control sequences out of 15000+600000
  679831 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,2089b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Sourav.Ghosh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Sourav.Ghosh\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Sourav.Ghosh/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on elsarticle-template-num-names.pdf (4 pages, 1623103 bytes).
+Output written on elsarticle-template-num-names.pdf (4 pages, 1626705 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
