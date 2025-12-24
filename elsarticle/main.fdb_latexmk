@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1766497144.2204 "c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-num-names.tex" "elsarticle-template-num-names.pdf" "elsarticle-template-num-names" 1766497146.93655 0
+["pdflatex"] 1766582563.73177 "c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/main.tex" "main.pdf" "main" 1766582565.95603 0
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1766382422 84158 d77284a6843bde1e4b9764f09fb2e89e ""
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt0800.pk" 1766410403 15192 28e226753cce40b0f4a808cd706e2b45 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1766382427 20028 d255ec8385a266895a8dabe98ac62c7f ""
@@ -123,21 +123,21 @@
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/txfonts/utxmia.fd" 977342760 334 87436a82076ca2e35cd305f852507afc ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/txfonts/utxsyc.fd" 977342760 310 4b5d6fe830337242ef847b3bff48ba21 ""
   "C:/Users/Admin/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-num-names.tex" 1766495643 24757 26fba506c6a11d7e085eda48f910e4d4 ""
-  "elsarticle-template-num-names.aux" 1766497146 4839 24585e4b6100bdec922bac458a54a371 "pdflatex"
-  "elsarticle-template-num-names.out" 1766497146 2363 fcafa2a8025b491c94539e4c58053056 "pdflatex"
-  "elsarticle-template-num-names.spl" 1766497144 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "elsarticle-template-num-names.tex" 1766495643 24757 26fba506c6a11d7e085eda48f910e4d4 ""
+  "c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/main.tex" 1766582560 24847 39e56c1234cd8f39afd475326d6ff6d3 ""
   "figs/fig1.jpg" 1766495643 659711 79d1f7f7955a86d524df006ad6600712 ""
   "figs/fig2.png" 1766495643 71899 3bbe88621eb4f5aa632d17ea75239d75 ""
   "figs/fig3.png" 1766495643 64470 3b6548466d292d75fbf51b34e1683168 ""
   "figs/fig3x.png" 1766495643 530288 af0eb7b6248bf2dc93f3eb330f76ffea ""
   "figs/fig4.png" 1766495643 114482 f4d59a5f0adc91cf5944b11f485b78b4 ""
   "figs/fig5.png" 1766495643 124271 28ec280e499e45b19f5bb6caff5505e4 ""
+  "main.aux" 1766582565 4353 bf3c2d3792c3a3693536fe0eefc74625 "pdflatex"
+  "main.out" 1766582565 1967 b16a5b92c404211fe5559e8d05d3d40f "pdflatex"
+  "main.spl" 1766582564 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1766582560 24847 39e56c1234cd8f39afd475326d6ff6d3 ""
   (generated)
-  "elsarticle-template-num-names.aux"
-  "elsarticle-template-num-names.log"
-  "elsarticle-template-num-names.out"
-  "elsarticle-template-num-names.pdf"
-  "elsarticle-template-num-names.spl"
+  "main.aux"
+  "main.log"
+  "main.out"
+  "main.pdf"
+  "main.spl"
   (rewritten before read)

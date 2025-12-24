@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  23 DEC 2025 22:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  24 DEC 2025 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-num-names.tex
-(c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/elsarticle-template-num-names.tex
+**c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/main.tex
+(c:/Users/Admin/OneDrive/Documents/GitHub/smops-paper/elsarticle/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/elsarticle\elsarticle.cls
@@ -78,7 +78,7 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \@enLab=\toks19
 \@sep=\skip50
 \@@sep=\skip51
- (elsarticle-template-num-names.spl) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+ (main.spl) (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip52
 \bibsep=\skip53
@@ -86,7 +86,7 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count269
 )
 \splwrite=\write3
-\openout3 = `elsarticle-template-num-names.spl'.
+\openout3 = `main.spl'.
 
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -629,8 +629,8 @@ Package caption Info: New subtype `subtable' on input line 238.
 LaTeX Font Info:    Trying to load font information for T1+txr on input line 71.
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\t1txr.fd
 File: t1txr.fd 2000/12/15 v3.1
-) (elsarticle-template-num-names.aux)
-\openout1 = `elsarticle-template-num-names.aux'.
+) (main.aux)
+\openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 71.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 71.
@@ -722,9 +722,9 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 71.
-(elsarticle-template-num-names.out) (elsarticle-template-num-names.out)
+(main.out) (main.out)
 \@outlinefile=\write4
-\openout4 = `elsarticle-template-num-names.out'.
+\openout4 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -754,7 +754,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 20
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<figs/fig1.jpg, id=59, 1927.2pt x 1085.05376pt>
+<figs/fig1.jpg, id=47, 1927.2pt x 1085.05376pt>
 File: figs/fig1.jpg Graphic file (type jpg)
 <use figs/fig1.jpg>
 Package pdftex.def Info: figs/fig1.jpg  used on input line 213.
@@ -780,7 +780,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
  <./figs/fig1.jpg>]
-<figs/fig4.png, id=82, 644.4075pt x 511.9125pt>
+<figs/fig4.png, id=70, 644.4075pt x 511.9125pt>
 File: figs/fig4.png Graphic file (type png)
 <use figs/fig4.png>
 Package pdftex.def Info: figs/fig4.png  used on input line 233.
@@ -788,12 +788,12 @@ Package pdftex.def Info: figs/fig4.png  used on input line 233.
 
 Underfull \vbox (badness 2875) has occurred while \output is active []
 
-<figs/fig3x.png, id=83, 1003.75pt x 564.1075pt>
+<figs/fig3x.png, id=71, 1003.75pt x 564.1075pt>
 File: figs/fig3x.png Graphic file (type png)
 <use figs/fig3x.png>
 Package pdftex.def Info: figs/fig3x.png  used on input line 241.
 (pdftex.def)             Requested size: 210.59857pt x 118.35417pt.
-<figs/fig2.png, id=86, 1011.78pt x 976.64874pt>
+<figs/fig2.png, id=74, 1011.78pt x 976.64874pt>
 File: figs/fig2.png Graphic file (type png)
 <use figs/fig2.png>
 Package pdftex.def Info: figs/fig2.png  used on input line 252.
@@ -802,7 +802,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 25
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [2 <./figs/fig4.png> <./figs/fig3x.png> <./figs/fig2.png>]
-<figs/fig3.png, id=100, 957.5775pt x 734.745pt>
+<figs/fig3.png, id=88, 957.5775pt x 734.745pt>
 File: figs/fig3.png Graphic file (type png)
 <use figs/fig3.png>
 Package pdftex.def Info: figs/fig3.png  used on input line 276.
@@ -812,7 +812,7 @@ Underfull \hbox (badness 3039) in paragraph at lines 293--294
 []\T1/txr/m/n/10 In the Cir-cu-lar Re-stricted Three-Body Prob-lem
  []
 
-<figs/fig5.png, id=102, 929.4725pt x 712.6625pt>
+<figs/fig5.png, id=90, 929.4725pt x 712.6625pt>
 File: figs/fig5.png Graphic file (type png)
 <use figs/fig5.png>
 Package pdftex.def Info: figs/fig5.png  used on input line 302.
@@ -832,7 +832,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--517
 \T1/cmtt/m/n/10 Space _ Safety / Space _ Debris / Recognising _
  []
 
-[4]
+
 Underfull \hbox (badness 1048) in paragraph at lines 519--523
 \T1/txr/m/n/10 rect? []$\T1/cmtt/m/n/10 SpaceNews . https : / / spacenews . com /
  []
@@ -847,28 +847,26 @@ Underfull \hbox (badness 1024) in paragraph at lines 531--534
 []\T1/txr/m/n/10 Apetrii, M., Cel-letti, A., Efthymiopou-los, C.,
  []
 
-[5
-
-] (elsarticle-template-num-names.aux)
+[4] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `elsarticle-template-num-names.out' has not changed.
-(rerunfilecheck)             Checksum: FCAFA2A8025B491C94539E4C58053056;2363.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B16A5B92C404211FE5559E8D05D3D40F;1967.
  ) 
 Here is how much of TeX's memory you used:
- 13864 strings out of 474486
- 217405 string characters out of 5743754
- 1946542 words of memory out of 5000000
- 35874 multiletter control sequences out of 15000+600000
+ 13841 strings out of 474486
+ 216323 string characters out of 5743754
+ 1943542 words of memory out of 5000000
+ 35859 multiletter control sequences out of 15000+600000
  610179 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,2091b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,2066b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on elsarticle-template-num-names.pdf (5 pages, 1634382 bytes).
+Output written on main.pdf (4 pages, 1630354 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
