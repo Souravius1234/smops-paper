@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  31 DEC 2025 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  31 DEC 2025 11:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -818,64 +818,89 @@ File: figs/fig5.png Graphic file (type png)
 Package pdftex.def Info: figs/fig5.png  used on input line 302.
 (pdftex.def)             Requested size: 210.59857pt x 161.47307pt.
 [3 <./figs/fig3.png> <./figs/fig5.png>]
-<figs/nrho/nrho3.png, id=125, 487.0998pt x 436.9926pt>
+<figs/fig6.png, id=125, 293.095pt x 417.56pt>
+File: figs/fig6.png Graphic file (type png)
+<use figs/fig6.png>
+Package pdftex.def Info: figs/fig6.png  used on input line 371.
+(pdftex.def)             Requested size: 210.59857pt x 300.0313pt.
+<figs/nrho/nrho3.png, id=126, 487.0998pt x 436.9926pt>
 File: figs/nrho/nrho3.png Graphic file (type png)
 <use figs/nrho/nrho3.png>
-Package pdftex.def Info: figs/nrho/nrho3.png  used on input line 373.
+Package pdftex.def Info: figs/nrho/nrho3.png  used on input line 380.
 (pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
-<figs/nrho/nrho6.png, id=126, 487.0998pt x 436.9926pt>
+<figs/nrho/nrho6.png, id=127, 487.0998pt x 436.9926pt>
 File: figs/nrho/nrho6.png Graphic file (type png)
 <use figs/nrho/nrho6.png>
-Package pdftex.def Info: figs/nrho/nrho6.png  used on input line 374.
+Package pdftex.def Info: figs/nrho/nrho6.png  used on input line 381.
 (pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
-<figs/nrho/nrho9.png, id=127, 487.0998pt x 436.9926pt>
+<figs/nrho/nrho9.png, id=128, 487.0998pt x 436.9926pt>
 File: figs/nrho/nrho9.png Graphic file (type png)
 <use figs/nrho/nrho9.png>
-Package pdftex.def Info: figs/nrho/nrho9.png  used on input line 375.
+Package pdftex.def Info: figs/nrho/nrho9.png  used on input line 382.
 (pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
-<figs/nrho/nrho12.png, id=128, 487.0998pt x 436.9926pt>
+<figs/nrho/nrho12.png, id=129, 487.0998pt x 436.9926pt>
 File: figs/nrho/nrho12.png Graphic file (type png)
 <use figs/nrho/nrho12.png>
-Package pdftex.def Info: figs/nrho/nrho12.png  used on input line 379.
+Package pdftex.def Info: figs/nrho/nrho12.png  used on input line 386.
 (pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
-<figs/nrho/nrho60.png, id=129, 487.0998pt x 436.9926pt>
+<figs/nrho/nrho60.png, id=130, 487.0998pt x 436.9926pt>
 File: figs/nrho/nrho60.png Graphic file (type png)
 <use figs/nrho/nrho60.png>
-Package pdftex.def Info: figs/nrho/nrho60.png  used on input line 380.
+Package pdftex.def Info: figs/nrho/nrho60.png  used on input line 387.
 (pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
-
-Underfull \hbox (badness 4792) in paragraph at lines 534--538
+File: figs/nrho/nrho3.png Graphic file (type png)
+<use figs/nrho/nrho3.png>
+Package pdftex.def Info: figs/nrho/nrho3.png  used on input line 398.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+File: figs/nrho/nrho6.png Graphic file (type png)
+<use figs/nrho/nrho6.png>
+Package pdftex.def Info: figs/nrho/nrho6.png  used on input line 399.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+File: figs/nrho/nrho9.png Graphic file (type png)
+<use figs/nrho/nrho9.png>
+Package pdftex.def Info: figs/nrho/nrho9.png  used on input line 400.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+File: figs/nrho/nrho12.png Graphic file (type png)
+<use figs/nrho/nrho12.png>
+Package pdftex.def Info: figs/nrho/nrho12.png  used on input line 404.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+File: figs/nrho/nrho60.png Graphic file (type png)
+<use figs/nrho/nrho60.png>
+Package pdftex.def Info: figs/nrho/nrho60.png  used on input line 405.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+ [4 <./figs/fig6.png>]
+Underfull \hbox (badness 4792) in paragraph at lines 559--563
 []\T1/txr/m/n/10 European Space Agency: \T1/txr/m/it/10 Recog-nis-ing Sus-
  []
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 534--538
+Underfull \hbox (badness 6284) in paragraph at lines 559--563
 \T1/txr/m/it/10 tain-able Be-haviour\T1/txr/m/n/10 , []$\T1/cmtt/m/n/10 https : / / www . esa . int /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--538
+Underfull \hbox (badness 10000) in paragraph at lines 559--563
 \T1/cmtt/m/n/10 Space _ Safety / Space _ Debris / Recognising _
  []
 
-[4]
-Underfull \hbox (badness 1048) in paragraph at lines 540--544
+
+Underfull \hbox (badness 1048) in paragraph at lines 565--569
 \T1/txr/m/n/10 rect? []$\T1/cmtt/m/n/10 SpaceNews . https : / / spacenews . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--544
+Underfull \hbox (badness 10000) in paragraph at lines 565--569
 \T1/cmtt/m/n/10 op-[]ed-[]lunar-[]gateway-[]or-[]moon-[]direct/$[]\T1/txr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 552--555
+Underfull \hbox (badness 1024) in paragraph at lines 577--580
 []\T1/txr/m/n/10 Apetrii, M., Cel-letti, A., Efthymiopou-los, C.,
  []
 
-[5
+[5 <./figs/nrho/nrho3.png (PNG copy)> <./figs/nrho/nrho6.png (PNG copy)> <./figs/nrho/nrho9.png (PNG copy)> <./figs/nrho/nrho12.png (PNG copy)> <./figs/nrho/nrho60.png (PNG copy)>] [6
 
- <./figs/nrho/nrho3.png (PNG copy)> <./figs/nrho/nrho6.png (PNG copy)> <./figs/nrho/nrho9.png (PNG copy)> <./figs/nrho/nrho12.png (PNG copy)> <./figs/nrho/nrho60.png (PNG copy)>] (elsarticle-template-num-names.aux)
+] (elsarticle-template-num-names.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -884,17 +909,17 @@ Package rerunfilecheck Info: File `elsarticle-template-num-names.out' has not ch
 (rerunfilecheck)             Checksum: FCAFA2A8025B491C94539E4C58053056;2363.
  ) 
 Here is how much of TeX's memory you used:
- 13906 strings out of 474486
- 218481 string characters out of 5743754
- 1948542 words of memory out of 5000000
- 35915 multiletter control sequences out of 15000+600000
+ 13918 strings out of 474486
+ 218671 string characters out of 5743754
+ 1943542 words of memory out of 5000000
+ 35924 multiletter control sequences out of 15000+600000
  610179 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,2091b,554s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,2091b,568s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on elsarticle-template-num-names.pdf (5 pages, 1922914 bytes).
+Output written on elsarticle-template-num-names.pdf (6 pages, 1940185 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

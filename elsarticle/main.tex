@@ -1,4 +1,4 @@
-%% 
+%%
 %% Copyright 2007-2024 Elsevier Ltd
 %% 
 %% This file is part of the 'Elsarticle Bundle'.
@@ -130,8 +130,6 @@
             %postcode={113-0033}, 
             %state={},
             country={Japan}}
-
-
 
 \affiliation[ISAE]{organization={ISAE-SUPAERO},%Department and Organization
             %addressline={Bunkyo-ku}, 
@@ -343,6 +341,13 @@ Above relations may be further simplified to obtain the Area-to-mass ratio of ea
     \bigg(\frac{A}{m} \bigg)_f = \frac{3}{4} \frac{1}{L_c \rho_f}
 \end{equation}
 
+\begin{figure}[t]
+    \centering
+    \captionsetup{justification=centering}
+    \includegraphics[width=0.45\textwidth]{figs/fig6.png}
+    \caption{Representation of Initial Debris Positions with NRHO for reference (Debris Field magnified for representation)}\label{fig7}
+\end{figure}
+
 \subsection{Monte-Carlo Simulations of Breakup events}
 \label{sec3.2}
 Based on EVOLVE 4.0, Monte-Carlo based simulations are done to generate debris fragments from explosions and collisions, and the spread of fragments post breakup is assumed to be omnidirectional. Hence, a $\Delta v$ profile based on the following is imparted on each fragment:
@@ -367,7 +372,8 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
 
 \begin{figure*}[t]
     \centering
-    \setlength{\tabcolsep}{1.2em}
+    \setlength{\tabcolsep}{1em}
+    \renewcommand{\arraystretch}{1.5} % Adjust row height
     \begin{tabular}{c c c}
         \includegraphics[width=0.28\textwidth]{figs/nrho/nrho3.png} &
         \includegraphics[width=0.28\textwidth]{figs/nrho/nrho6.png} &
@@ -379,12 +385,30 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
         \includegraphics[width=0.28\textwidth]{figs/nrho/nrho60.png} \\
         (c) After 12 months & (d) After 60 months \\
         \end{tabular}
-    \caption{NRHO Debris Cloud Evolution over time}\label{fig7}
+    \caption{NRHO Debris Cloud Evolution over time}\label{fig8}
+\end{figure*}
+
+\begin{figure*}[ht]
+    \centering
+    \setlength{\tabcolsep}{1em}
+    \renewcommand{\arraystretch}{1.5} % Adjust row height
+    \begin{tabular}{c c c}
+        \includegraphics[width=0.28\textwidth]{figs/nrho/nrho3.png} &
+        \includegraphics[width=0.28\textwidth]{figs/nrho/nrho6.png} &
+        \includegraphics[width=0.28\textwidth]{figs/nrho/nrho9.png} \\
+        (a) After 3 months & (b) After 6 months & (c) After 9 months\\
+        \end{tabular}
+        \begin{tabular}{c c} 
+        \includegraphics[width=0.28\textwidth]{figs/nrho/nrho12.png} &
+        \includegraphics[width=0.28\textwidth]{figs/nrho/nrho60.png} \\
+        (c) After 12 months & (d) After 60 months \\
+        \end{tabular}
+    \caption{NRHO Debris Cloud Evolution over time}\label{fig8}
 \end{figure*}
 
 \subsection{Long Term Propagation}
 
-As stated in section \ref{sec3.2} and \ref{sec3.3}, 1000 Monte-Carlo runs of debris is propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
+As stated in sections \ref{sec3.2} and \ref{sec3.3}, 1000 Monte-Carlo runs of debris is propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
 ADD ALL THE FOOKING PICTURES OF THE HEATMAPS HERE.
 
 \paragraph{Near Rectilinear Halo Orbits}
