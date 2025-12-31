@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  24 DEC 2025 22:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.12.12)  31 DEC 2025 10:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -754,7 +754,7 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 20
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<figs/fig1.jpg, id=47, 1927.2pt x 1085.05376pt>
+<figs/fig1.jpg, id=51, 1927.2pt x 1085.05376pt>
 File: figs/fig1.jpg Graphic file (type jpg)
 <use figs/fig1.jpg>
 Package pdftex.def Info: figs/fig1.jpg  used on input line 213.
@@ -780,7 +780,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
  <./figs/fig1.jpg>]
-<figs/fig4.png, id=70, 644.4075pt x 511.9125pt>
+<figs/fig4.png, id=74, 644.4075pt x 511.9125pt>
 File: figs/fig4.png Graphic file (type png)
 <use figs/fig4.png>
 Package pdftex.def Info: figs/fig4.png  used on input line 233.
@@ -788,12 +788,12 @@ Package pdftex.def Info: figs/fig4.png  used on input line 233.
 
 Underfull \vbox (badness 2875) has occurred while \output is active []
 
-<figs/fig3x.png, id=71, 1003.75pt x 564.1075pt>
+<figs/fig3x.png, id=75, 1003.75pt x 564.1075pt>
 File: figs/fig3x.png Graphic file (type png)
 <use figs/fig3x.png>
 Package pdftex.def Info: figs/fig3x.png  used on input line 241.
 (pdftex.def)             Requested size: 210.59857pt x 118.35417pt.
-<figs/fig2.png, id=74, 1011.78pt x 976.64874pt>
+<figs/fig2.png, id=78, 1011.78pt x 976.64874pt>
 File: figs/fig2.png Graphic file (type png)
 <use figs/fig2.png>
 Package pdftex.def Info: figs/fig2.png  used on input line 252.
@@ -802,7 +802,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 25
  (C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) [2 <./figs/fig4.png> <./figs/fig3x.png> <./figs/fig2.png>]
-<figs/fig3.png, id=88, 957.5775pt x 734.745pt>
+<figs/fig3.png, id=92, 957.5775pt x 734.745pt>
 File: figs/fig3.png Graphic file (type png)
 <use figs/fig3.png>
 Package pdftex.def Info: figs/fig3.png  used on input line 276.
@@ -812,61 +812,87 @@ Underfull \hbox (badness 3039) in paragraph at lines 293--294
 []\T1/txr/m/n/10 In the Cir-cu-lar Re-stricted Three-Body Prob-lem
  []
 
-<figs/fig5.png, id=90, 929.4725pt x 712.6625pt>
+<figs/fig5.png, id=94, 929.4725pt x 712.6625pt>
 File: figs/fig5.png Graphic file (type png)
 <use figs/fig5.png>
 Package pdftex.def Info: figs/fig5.png  used on input line 302.
 (pdftex.def)             Requested size: 210.59857pt x 161.47307pt.
 [3 <./figs/fig3.png> <./figs/fig5.png>]
-Underfull \hbox (badness 4792) in paragraph at lines 513--517
+<figs/nrho/nrho3.png, id=117, 487.0998pt x 436.9926pt>
+File: figs/nrho/nrho3.png Graphic file (type png)
+<use figs/nrho/nrho3.png>
+Package pdftex.def Info: figs/nrho/nrho3.png  used on input line 372.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+<figs/nrho/nrho6.png, id=118, 487.0998pt x 436.9926pt>
+File: figs/nrho/nrho6.png Graphic file (type png)
+<use figs/nrho/nrho6.png>
+Package pdftex.def Info: figs/nrho/nrho6.png  used on input line 373.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+<figs/nrho/nrho9.png, id=119, 487.0998pt x 436.9926pt>
+File: figs/nrho/nrho9.png Graphic file (type png)
+<use figs/nrho/nrho9.png>
+Package pdftex.def Info: figs/nrho/nrho9.png  used on input line 374.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+<figs/nrho/nrho12.png, id=120, 487.0998pt x 436.9926pt>
+File: figs/nrho/nrho12.png Graphic file (type png)
+<use figs/nrho/nrho12.png>
+Package pdftex.def Info: figs/nrho/nrho12.png  used on input line 378.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+<figs/nrho/nrho60.png, id=121, 487.0998pt x 436.9926pt>
+File: figs/nrho/nrho60.png Graphic file (type png)
+<use figs/nrho/nrho60.png>
+Package pdftex.def Info: figs/nrho/nrho60.png  used on input line 379.
+(pdftex.def)             Requested size: 131.03943pt x 117.55615pt.
+
+Underfull \hbox (badness 4792) in paragraph at lines 538--542
 []\T1/txr/m/n/10 European Space Agency: \T1/txr/m/it/10 Recog-nis-ing Sus-
  []
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 513--517
+Underfull \hbox (badness 6284) in paragraph at lines 538--542
 \T1/txr/m/it/10 tain-able Be-haviour\T1/txr/m/n/10 , []$\T1/cmtt/m/n/10 https : / / www . esa . int /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--517
+Underfull \hbox (badness 10000) in paragraph at lines 538--542
 \T1/cmtt/m/n/10 Space _ Safety / Space _ Debris / Recognising _
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 519--523
+Underfull \hbox (badness 1048) in paragraph at lines 544--548
 \T1/txr/m/n/10 rect? []$\T1/cmtt/m/n/10 SpaceNews . https : / / spacenews . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--523
+Underfull \hbox (badness 10000) in paragraph at lines 544--548
 \T1/cmtt/m/n/10 op-[]ed-[]lunar-[]gateway-[]or-[]moon-[]direct/$[]\T1/txr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 531--534
+Underfull \hbox (badness 1024) in paragraph at lines 556--559
 []\T1/txr/m/n/10 Apetrii, M., Cel-letti, A., Efthymiopou-los, C.,
  []
 
-[4] (main.aux)
+[4] [5 <./figs/nrho/nrho3.png (PNG copy)> <./figs/nrho/nrho6.png (PNG copy)> <./figs/nrho/nrho9.png (PNG copy)> <./figs/nrho/nrho12.png (PNG copy)> <./figs/nrho/nrho60.png (PNG copy)>] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B16A5B92C404211FE5559E8D05D3D40F;1967.
+(rerunfilecheck)             Checksum: DDC96B3096A3EF239A30C4E3E5EBE732;2184.
  ) 
 Here is how much of TeX's memory you used:
- 13841 strings out of 474486
- 216323 string characters out of 5743754
- 1943542 words of memory out of 5000000
- 35859 multiletter control sequences out of 15000+600000
+ 13887 strings out of 474486
+ 217455 string characters out of 5743754
+ 1945542 words of memory out of 5000000
+ 35901 multiletter control sequences out of 15000+600000
  610179 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,2066b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxr.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxmi.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txex.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 1630354 bytes).
+Output written on main.pdf (5 pages, 1920420 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
