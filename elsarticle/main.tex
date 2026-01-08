@@ -370,7 +370,7 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
 \section{Simulations}
 \label{sec4}
 
-\begin{figure*}[ht]
+\begin{figure*}
     \centering
     \setlength{\tabcolsep}{1em}
     \renewcommand{\arraystretch}{1.5} % Adjust row height
@@ -406,15 +406,35 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
     \caption{Debris Cloud Evolution over time following breakup at DRO}\label{fig9}
 \end{figure*}
 
-\subsection{Long Term Propagation}
+\begin{figure*}
+    \centering
+    \setlength{\tabcolsep}{1em}
+    \renewcommand{\arraystretch}{1.5} % Adjust row height
+    \begin{tabular}{c c c}
+        \includegraphics[width=0.28\textwidth]{figs/l2/L2_1.png} &
+        \includegraphics[width=0.28\textwidth]{figs/l2/L2_2.png} &
+        \includegraphics[width=0.28\textwidth]{figs/l2/L2_3.png} \\
+        (a) After 3 months & (b) After 6 months & (c) After 9 months\\
+        \end{tabular}
+        \begin{tabular}{c c} 
+        \includegraphics[width=0.28\textwidth]{figs/l2/L2_4.png} &
+        \includegraphics[width=0.28\textwidth]{figs/l2/L2_5.png} \\
+        (c) After 12 months & (d) After 60 months \\
+        \end{tabular}
+    \caption{Debris Cloud Evolution over time following breakup at an $\text{L}_2$ Halo Orbit}\label{fig10}
+\end{figure*}
 
 As stated in sections \ref{sec3.2} and \ref{sec3.3}, 1000 Monte-Carlo runs of debris is propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
-Figures \ref{fig8} and \ref{fig9} are corresponding heatmaps of fragment positions after certain periods of time, propagated as stated in section \ref{sec2.3}.
+Figures \ref{fig8}, \ref{fig9}, and \ref{fig10} are corresponding heatmaps of fragment positions after certain periods of time, propagated as stated in section \ref{sec2.3}.
+Results from corresponding simulations are as discussed below.
 
-\paragraph{Near Rectilinear Halo Orbits}
-\subsubsection{Near Rectilinear Halo Orbits}
+\subsection{Near Rectilinear Halo Orbits}
+A total of 629361 fragments of debris were simulated, and it was determined that at least 130719 fragments of debris struck the surface of the moon over the entire simulation period. 
+Due to the close proximity of the orbit to the Moon's surface, this result was expected. From the heatmaps in figure \ref{fig8}, we can also observe a general path taken by the fragments over time. 
+It is also observed that the fragments bounce off the zero-velocity surfaces, which are very distinctly visible due to the spread of fragments. 
 
-Which of these do I use? I don't know if subsubsections are allowed in the prescribed format, while paragraphs seems odd. 
+\subsection{Distant Retrograde Orbits}
+
 
 
 
