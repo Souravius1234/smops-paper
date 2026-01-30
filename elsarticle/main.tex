@@ -61,6 +61,8 @@
   \fancyhead[C]{\small Ghosh, S. et~al., SMOPS 2026}
 }
 
+\pagenumbering{arabic}
+
 %% The lineno packages adds line numbers. Start line numbering with
 %% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
 %% for the whole article with \linenumbers.
@@ -170,9 +172,15 @@
 
 %% Abstract
 \begin{abstract}
-%% Text of abstract
-As humanity pushes beyond Earth toward a sustained presence around the Moon, we face a familiar problem in a new neighbourhood: space debris. Decades of activity in near-Earth orbits have already filled space with fragments too small to track reliably yet large enough to threaten spacecraft, and if we repeat that pattern in the vast cislunar region between Earth and the Moon, routine lunar operations could become riskier, costlier, and more fragile. This study looks to understand the complex implications of the formation of debris clouds and their evolution in the cislunar space, and how they affect operations near the Lunar region. We focus on the orbits most likely to matter, Near-Rectilinear Halo Orbits (planned for NASA’s Gateway), Distant Retrograde Orbits, lunar frozen orbits, and Low Lunar Orbit, and simulate debris created by collisions or random breakups, then follow those fragments for months to years. To keep things realistic, we combine the insight of Earth–Moon circular restricted three-body dynamics with higher-fidelity multi-body models that include the Sun’s pull, solar radiation pressure, eclipses, and detailed lunar gravity, so we can capture both the broad transport trends and the messy details. We quantify the chance that debris ultimately strikes the Moon and map where those impacts concentrate over time; we also track how fragments ride natural phase-space “highways,” migrating among orbit families and occasionally threading through a defined keep-out corridor around Gateway. The result is a set of practical outputs, risk maps, survival timelines, and conjunction flux estimates, along with sensitivity to fragment size and reflectivity, all aimed at informing near-term operations. We close with concrete mitigations operators can adopt now, from keep-out zones and station-keeping choices to safer disposal strategies, so today’s small mishaps don’t become tomorrow’s systemic hazard for the Artemis era.
+As humanity pushes beyond Earth toward a sustained presence around the Moon, we face a familiar problem in a new neighbourhood: space debris. 
+Decades of activity in near-Earth orbits have already filled space with fragments too small to track reliably yet large enough to threaten spacecraft, and if we repeat that pattern in the vast cislunar region between Earth and the Moon, routine lunar operations could become riskier, costlier, and more fragile. 
+This study aims to understand the complex implications of the formation of debris clouds and their evolution in the cislunar space, and how they affect operations near the lunar region. 
+We focus on the orbits most likely to matter, Near-Rectilinear Halo Orbits (planned for NASA’s Gateway), a Distant Retrograde Orbit, and a $\text{L}_2$ orbit, and simulate debris created by collisions or explosions, then follow those fragments for months to years. 
+To keep things realistic, the Earth–Moon circular restricted three-body dynamics is used. We quantify the chance that debris ultimately strikes the Moon, and also track how fragments ride natural phase-space “highways,” migrating among orbit families. 
+The result is a set of practical outputs, risk maps, survival timelines, all aimed at informing near-term operations. 
+We close with concrete mitigations operators can adopt now, from keep-out zones and station-keeping choices to safer disposal strategies, so today’s small mishaps don’t become tomorrow’s systemic hazard for the Artemis era.
 \end{abstract}
+
 
 %%Graphical abstract
 %\begin{graphicalabstract}
@@ -206,25 +214,14 @@ Space Debris \sep Space Situational Awareness \sep Cislunar Space
 %%
 
 \section{Introduction}
+\label{sec1}
+The cislunar region, the vast expanse between the Earth and Moon, is emerging as the next frontier for space exploration and development. With growing ambitions from governmental space agencies and private enterprises alike, humanity is preparing to establish a sustained presence beyond low Earth orbit. A manned lunar outpost, once a distant aspiration, now lies within reach. To support such a presence, a wide array of space infrastructure will need to be deployed in the cislunar environment. These include communication relays, navigation systems, surveillance platforms, scientific instruments, and logistics modules, all of which will play crucial roles in enabling long-term human operations on and around the Moon. However, as with any expansion into new orbital regimes, the issue of space debris becomes an inevitable and pressing concern. History has shown us in near-Earth space that operational satellites and platforms are susceptible to malfunctions, fragmentation events, and collisions, all of which generate hazardous debris. In the cislunar region, the problem is compounded by the complex and often chaotic dynamical environment governed by the gravitational interplay between the Earth, Moon, and Sun. These dynamics can cause debris to evolve in unpredictable ways over time, posing significant collision risks not only to other operational assets but also to lunar surface installations and future crewed missions. 
+
 \begin{figure}
     \centering
     \includegraphics[width=0.45\textwidth]{figs/fig1.jpg}
     \caption{Illustration of Space Debris by ESA\cite{esa2019}}\label{fig1}
 \end{figure}
-The cislunar region, the vast expanse between the Earth and Moon, is emerging as the next frontier for space exploration and development. With growing ambitions from governmental space agencies and private enterprises alike, humanity is preparing to establish a sustained presence beyond low Earth orbit. A manned lunar outpost, once a distant aspiration, now lies within reach. To support such a presence, a wide array of space infrastructure will need to be deployed in the cislunar environment. These include communication relays, navigation systems, surveillance platforms, scientific instruments, and logistics modules, all of which will play crucial roles in enabling long-term human operations on and around the Moon. However, as with any expansion into new orbital regimes, the issue of space debris becomes an inevitable and pressing concern. History has shown us in near-Earth space that operational satellites and platforms are susceptible to malfunctions, fragmentation events, and collisions, all of which generate hazardous debris. In the cislunar region, the problem is compounded by the complex and often chaotic dynamical environment governed by the gravitational interplay between the Earth, Moon, and Sun. These dynamics can cause debris to evolve in unpredictable ways over time, posing significant collision risks not only to other operational assets but also to lunar surface installations and future crewed missions. 
-
-% \begin{figure}
-%     \begin{subfigure}{.5\textwidth}
-%         \centering
-%         \includegraphics[width=0.45\textwidth]{figs/fig1.jpg}
-%         \caption{Illustration of Space Debris by ESA\cite{esa2019}}\label{fig1}
-%     \end{subfigure}
-%     \begin{subfigure}{.5\textwidth}
-%         \centering
-%         \includegraphics[width=0.45\textwidth]{figs/fig4.png}
-%         \caption{NRHO Orbit}\label{fig2}
-%     \end{subfigure}
-% \end{figure}
 
 \begin{figure}[t]
     \centering
@@ -232,7 +229,7 @@ The cislunar region, the vast expanse between the Earth and Moon, is emerging as
     \caption{NRHO Orbit}\label{fig2}
 \end{figure}
 
-This study seeks to address the emerging challenge of debris risk in the cislunar space environment. By modeling and simulating key scenarios, including in-orbit break-up events, high-energy impact trajectories, and long-term orbital evolution, we aim to assess potential debris propagation patterns and their associated hazards. In particular, we investigate how fragments from operational failures or collisions might interact with valuable regions such as Earth-Moon Lagrange points, lunar transfer corridors, lunar orbit, and also near-Earth regions such Geostationary and Geosynchronous orbits. These insights are critical for informing the design of future space traffic management protocols, shielding strategies, and operational policies that will ensure the safety, sustainability, and success of humanity’s next great leap into space. Results presented demonstrate the spread of the debris field over time based on Monte-Carlo simulations of a breakup event in the NRHO, a Distant Retrograde orbit (DRO), and a $\text{L}_2$ Halo Orbit.
+This study seeks to address the emerging challenge of debris risk in the cislunar space environment. By modeling and simulating key scenarios, including in-orbit break-up events, high-energy impact trajectories, and long-term orbital evolution, we aim to assess potential debris propagation patterns and their associated hazards. In particular, we investigate how fragments from operational failures or collisions might interact with valuable regions such as Earth-Moon Lagrange points, lunar transfer corridors, lunar orbit, and also near-Earth regions such as Geostationary and Geosynchronous orbits. These insights are critical for informing the design of future space traffic management protocols, shielding strategies, and operational policies that will ensure the safety, sustainability, and success of humanity’s next great leap into space. Results presented demonstrate the spread of the debris field over time based on Monte-Carlo simulations of a breakup event in the NRHO, a Distant Retrograde orbit (DRO), and a $\text{L}_2$ Halo Orbit.
 
 \begin{figure}[t]
     \centering
@@ -245,7 +242,7 @@ This study seeks to address the emerging challenge of debris risk in the cisluna
 \subsection{Circular Restricted Three-Body Problem}
 \label{sec2.1}
 
-\begin{figure}[t]
+\begin{figure}
     \centering
     \includegraphics[width=0.45\textwidth]{figs/fig2.png}
     \caption{CR3BP Model}\label{fig3}
@@ -285,6 +282,10 @@ where, $\Omega$ is the pseudo-potential given by,
 \begin{equation}
     r_2 = \sqrt{(x-1+\mu)^2 + y^2 + z^2}
 \end{equation}
+where, $\mu$ is the mass parameter defined as,
+\begin{equation}
+    \mu = \frac{m_2}{m_1 + m_2}
+\end{equation}
 
 \subsection{Realms of Possible Motion}
 \label{sec2.2}
@@ -311,7 +312,7 @@ A Variable-Step, Variable-Order (VSVO) Adams-Bashforth-Moulton integrator referr
 \subsection{Fragmentation Modeling}
 \label{sec3.1}
 
-Spacecraft breakup events may be classified into two main types, collisions and explosions. It is very challenging to accurately model a spacecraft breakup event, since it involves several aspects such as the energy released during the event, the materials of the spacecraft, and several other quantities. Based on observations from events in the near-Earth orbits, NASA developed an empirical model referred to as EVOLVE 4.0. This model gives a good estimate of the number of fragments, their size distribution as a function of the parent satellitess size, fragment area and masses, and also the type of event. 
+Spacecraft breakup events may be classified into two main types, collisions and explosions. It is very challenging to accurately model a spacecraft breakup event, since it involves several aspects such as the energy released during the event, the materials of the spacecraft, and several other quantities. Based on observations from events in the near-Earth orbits, NASA developed an empirical model referred to as EVOLVE 4.0. This model gives a good estimate of the number of fragments, their size distribution as a function of the parent satellites' size, fragment area and masses, and also the type of event. 
 The characteristic length of any fragment is given by the relation \cite{apetrii2024}:
 
 \begin{equation}
@@ -330,7 +331,7 @@ Based on this, we may obtain the size distribution of fragments from an explosio
 where, $\beta_{\text{exp}} = 1.6$ and $\beta_{\text{col}} = 1.71$, and $M$ is the combined masses of the two objects that collided. Subsequently, we may model the area and mass of the fragments using the relations:
 
 \begin{equation}
-    m_f = \frac{4}{3} \pi \bigg(\frac{L_c}{2} \bigg)^2 \rho_f 
+    m_f = \frac{4}{3} \pi \bigg(\frac{L_c}{2} \bigg)^3 \rho_f 
 \end{equation}
 \begin{equation}
     A_f = \pi \bigg(\frac{L_c}{2} \bigg)^2
@@ -338,7 +339,7 @@ where, $\beta_{\text{exp}} = 1.6$ and $\beta_{\text{col}} = 1.71$, and $M$ is th
 
 Above relations may be further simplified to obtain the Area-to-mass ratio of each fragment, given by the relation:
 \begin{equation}
-    \bigg(\frac{A}{m} \bigg)_f = \frac{3}{4} \frac{1}{L_c \rho_f}
+    \bigg(\frac{A}{m} \bigg)_f = \frac{3}{2} \frac{1}{L_c \rho_f}
 \end{equation}
 
 \begin{figure}[t]
@@ -350,27 +351,43 @@ Above relations may be further simplified to obtain the Area-to-mass ratio of ea
 
 \subsection{Monte-Carlo Simulations of Breakup events}
 \label{sec3.2}
-Based on EVOLVE 4.0, Monte-Carlo based simulations are done to generate debris fragments from explosions and collisions, and the spread of fragments post breakup is assumed to be omnidirectional. Hence, a $\Delta v$ profile based on the following is imparted on each fragment:
+Based on EVOLVE 4.0, Monte-Carlo based simulations are done to generate debris fragments from explosions and collisions, and the spread of fragments post breakup is assumed to be omnidirectional. Hence, a $\Delta v$ profile based on the following is imparted on each fragment\cite{apetrii2024}:
 \begin{equation}
-    \Delta v_x = \Delta v \sqrt{1 - u^2} \cos \theta
+    \Delta v_x = \Delta v \bigg( \sqrt{1 - u^2} \bigg) \cos \theta
 \end{equation}
 \begin{equation}
-    \Delta v_x = \Delta v \sqrt{1 - u^2} \sin \theta
+    \Delta v_y = \Delta v \bigg( \sqrt{1 - u^2} \bigg) \sin \theta
 \end{equation}
 \begin{equation}
     \Delta v_z = \Delta v u
 \end{equation}
-where, $u$ is a random number uniformly sampled between -1 and 1, and $\theta$ is a random angle sampled between 0 and $2\pi$. The initial mass of the parent satellite is considered to be 1000 kg, and the characteristic lengths of fragments is sampled between 10 cm and 1 m. 1000 runs were performed, and three main orbits were analyzed, which include the Near-Rectilinear Halo Orbit (NRHO), a Distant Retrograde Orbit (DRO), and a $\text{L}_2$ Halo orbit. Each fragment is then propagated over a period of 3, 6, 9, 12, and 60 months to demonstrate their behaviour over a long duration of time. 
-The initial positions of each fragment is randomized within a radius of 500 m. 
+where, $u$ is a random number uniformly sampled between -1 and 1, and $\theta$ is a random angle sampled between 0 and $2\pi$. The initial mass of the parent satellite is considered to be 1000 kg, and the characteristic lengths of fragments are sampled between 10 cm and 1 m. 1000 runs were performed, and three main orbits were analyzed, which include the Near-Rectilinear Halo Orbit (NRHO), a Distant Retrograde Orbit (DRO), and a $\text{L}_2$ Halo orbit. Each fragment is then propagated over a period of 3, 6, 9, 12, and 60 months to demonstrate their behaviour over a long duration of time. 
+The initial fragment positions are randomized within a sphere of radius 500 m about the parent state, with this perturbation implemented in the nondimensional CR3BP rotating frame by scaling the physical radius by the characteristic length unit (LU), i.e., $\delta r_{nd}=500m/LU$ (with LU taken as the Earth–Moon distance). 
 
-\subsection{Collisions with the Moon and the Lunar Gateway}
+\subsection{Collisions with the Moon}
 \label{sec3.3}
-Upon propagation, fragments observed hitting the Moon or approaching close to the Lunar Gateway in the NRHO are flagged. This helps with assessing the collision risk, and also the potential risks of debris in the region.
+Upon propagation, Fragments that impact the Moon are flagged. This helps with assessing the collision risk, and also the potential risks of debris in the region.
 
 \section{Simulations}
 \label{sec4}
 
-\begin{figure*}
+\begin{table*}[t]
+    \centering
+    \setlength{\tabcolsep}{1em}
+    \captionof{table}{Initial Conditions of Orbits studied}
+    \begin{tabular}{c c c c c c c c c}
+        \hline
+        Orbit Type & x & y & z & \textbf{$\dot x$} & \textbf{$\dot y$} & \textbf{$\dot z$} & $T_{\text{period}}$ & $E$\\
+        \hline
+        NRHO & 1.01949 & 0.0 & -0.18029 & 0.0 & -0.09768 & 0.0 & 1.47 & 3.049091 \\
+        DRO & 0.38681 & 0.0 & 0.0 & 0.0 & 1.60446 & 0.0 & 6.15 & 2.567900 \\
+        $\text{L}_2$ Halo Orbit & 1.08958 & 0.0 & 0.20169 & 0.0 & -0.20747 & 0.0 & 2.48 & 3.015673 \\
+        \hline
+        \label{table1}
+    \end{tabular}
+\end{table*}
+
+\begin{figure*}[t]
     \centering
     \setlength{\tabcolsep}{1em}
     \renewcommand{\arraystretch}{1.5} % Adjust row height
@@ -383,9 +400,9 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
         \begin{tabular}{c c} 
         \includegraphics[width=0.28\textwidth]{figs/nrho/nrho12.png} &
         \includegraphics[width=0.28\textwidth]{figs/nrho/nrho60.png} \\
-        (c) After 12 months & (d) After 60 months \\
+        (d) After 12 months & (e) After 60 months \\
         \end{tabular}
-    \caption{Debris Cloud Evolution over time following breakup at NRHO}\label{fig8}
+    \caption{Debris Cloud Evolution over time following breakup at the NRHO}\label{fig8}
 \end{figure*}
 
 \begin{figure*}
@@ -401,9 +418,9 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
         \begin{tabular}{c c} 
         \includegraphics[width=0.28\textwidth]{figs/dro/dro4.png} &
         \includegraphics[width=0.28\textwidth]{figs/dro/dro5.png} \\
-        (c) After 12 months & (d) After 60 months \\
+        (d) After 12 months & (e) After 60 months \\
         \end{tabular}
-    \caption{Debris Cloud Evolution over time following breakup at DRO}\label{fig9}
+    \caption{Debris Cloud Evolution over time following breakup at a DRO}\label{fig9}
 \end{figure*}
 
 \begin{figure*}
@@ -419,151 +436,89 @@ Upon propagation, fragments observed hitting the Moon or approaching close to th
         \begin{tabular}{c c} 
         \includegraphics[width=0.28\textwidth]{figs/l2/L2_4.png} &
         \includegraphics[width=0.28\textwidth]{figs/l2/L2_5.png} \\
-        (c) After 12 months & (d) After 60 months \\
+        (d) After 12 months & (e) After 60 months \\
         \end{tabular}
     \caption{Debris Cloud Evolution over time following breakup at an $\text{L}_2$ Halo Orbit}\label{fig10}
 \end{figure*}
 
-As stated in sections \ref{sec3.2} and \ref{sec3.3}, 1000 Monte-Carlo runs of debris is propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
+As stated in sections \ref{sec3.2} and \ref{sec3.3}, 1000 Monte-Carlo runs of debris are propagated for each of the orbits studied, and collisions are flagged. A heatmap of fragment location after each time step is generated, which is used to determine the evolution of the debris cloud over a duration of five years. Results are as seen in the following figures.
 Figures \ref{fig8}, \ref{fig9}, and \ref{fig10} are corresponding heatmaps of fragment positions after certain periods of time, propagated as stated in section \ref{sec2.3}.
 Results from corresponding simulations are as discussed below.
 
 \subsection{Near Rectilinear Halo Orbits}
 A total of 629361 fragments of debris were simulated, and it was determined that at least 130719 fragments of debris struck the surface of the moon over the entire simulation period. 
-Due to the close proximity of the orbit to the Moon's surface, this result was expected. From the heatmaps in figure \ref{fig8}, we can also observe a general path taken by the fragments over time. 
+Due to the close proximity of the orbit to the moon's surface, this result was expected. From the heatmaps in figure \ref{fig8}, we can also observe a general path taken by the fragments over time. 
 It is also observed that the fragments bounce off the zero-velocity surfaces, which are very distinctly visible due to the spread of fragments. 
+
+\begin{table*}
+    \centering
+    \setlength{\tabcolsep}{1em}
+    \captionof{table}{Number of Fragments Colliding with the Moon over time}
+    \begin{tabular}{c c c c}
+        \hline
+        Orbit Type & Number of Fragments & Lunar Impact & Percentage\\
+        \hline
+        NRHO & 629,361 & 130,719 & 20.77\% \\
+        DRO & 629,085 & 7,612 & 1.21\% \\
+        $\text{L}_2$ Halo Orbit & 626,614 & 49,492 & 7.90\%\\
+        \hline
+        \label{table2}
+    \end{tabular}
+\end{table*}
 
 \subsection{Distant Retrograde Orbits}
 
+The DRO debris exhibits comparatively broader transport through the Earth–Moon system, consistent with its lower Jacobi constant (i.e., higher effective energy), which reduces the constraint imposed by the zero-velocity boundaries and enlarges the accessible regions of motion.
+Similar to the NRHO simulations, a total of 629,085 fragments of debris were simulated, and it was observed that only 7,612 of those fragments collided with the Lunar surface. 
+Corresponding heatmaps are as seen in figure \ref{fig9}.
 
+\subsection{$\text{L}_2$ Halo Orbits}
+A total of 626,614 fragments of debris were simulated, and it was observed that 49,492 of those fragments collided with the Lunar surface. 
+Corresponding heatmaps are as seen in figure \ref{fig10}. 
+Similar to the NRHO simulations, we can observe a general path taken by the fragments over time, and the fragments also bounce off the zero-velocity surfaces, which are very distinctly visible due to the spread of fragments.
 
+\section{Discussion}
+\label{sec5}
 
-%% Add \usepackage{lineno} before \begin{document} and uncomment 
-%% following line to enable line numbers
-%% \linenumbers
+\subsection{Surveillance and Tracking}
+\label{sec5.1}
+The Monte-Carlo breakup cases demonstrate that cislunar debris is not only a “local” hazard near the parent orbit; it is rapidly transported along dynamical structures of the Earth–Moon system. In all three scenarios, the cloud expands from an initially compact distribution (randomized within a 500 m radius) into coherent bands and voids that align with the accessible regions defined by the zero-velocity geometry and the orbit family of the parent trajectory. 
+This is particularly evident in the NRHO and L2 halo cases, where fragments appear to “bounce” and accumulate along zero-velocity boundaries, producing persistent high-density arcs rather than a uniformly mixed background. 
 
-%% main text
-%%
+From an SSA standpoint, this implies that a static sensor concept-of-operations (e.g., fixed pointing around the Gateway orbit) is insufficient. Instead, surveillance must be structured around (i) high-occupancy phase-space corridors that emerge in the heatmaps and (ii) time-evolving density peaks over the 3–60 month windows used here. 
 
-%% Use \section commands to start a section
-% \section{Example Section}
-% \label{sec1}
-% %% Labels are used to cross-reference an item using \ref command.
+Practically, the simulations suggest two distinct tracking regimes:
+\begin{itemize}
+    \item NRHO / $\text{L}_2$ halo vicinity tracking (asset protection mode): Both cases generate sustained concentrations near lunar distances, with substantial lunar impact counts indicating repeated close approaches to the Moon-facing region. In the NRHO case, 130,719 out of 629,361 simulated fragments strike the lunar surface over the simulation horizon, consistent with persistent lunar-proximal transport. In the L2 halo case, 49,492 out of 626,614 fragments strike the lunar surface, again indicating strong coupling to the lunar neighborhood. This supports a surveillance posture that prioritizes conjunction screening for assets operating in/near these families and their transfer corridors.
+    \item System-wide surveillance (environment characterization mode) for DRO-origin debris: DRO breakup produces relatively few lunar impacts (7,612 out of 629,085), but evolves toward a broad, near-spherical distribution across the Earth–Moon system at longer times, implying a diffuse but widespread background hazard with reduced predictability for “where the debris is concentrated” at any instant. This argues for wide-area survey strategies and periodic re-characterization of the environment rather than only local keep-out screening.
+\end{itemize}
 
-% Section text. See Subsection \ref{subsec1}.
+Finally, the fragmentation and size assumptions used here frame a realistic “trackability gap” problem: fragments are sampled from 10 cm to 1 m, with large counts generated via EVOLVE-based scaling, and the model explicitly notes sensitivity to fragment size and reflectivity as relevant operational outputs. For many fragments in this regime, continuous catalog maintenance will likely require multi-sensor data fusion and predictive density mapping (heatmap-style products) rather than deterministic orbit maintenance for every object.
 
-% %% Use \subsection commands to start a subsection.
-% \subsection{Example Subsection}
-% \label{subsec1}
+\subsection{Mitigation Strategies}
+\begin{itemize}
+    \item Fragmentation prevention / passivation (highest leverage). Because the simulations show long-lived transport and system-wide spreading (especially in the DRO case), preventing breakup dominates downstream risk reduction. The study already assumes breakup types (collision/explosion) and uses EVOLVE-style fragment generation; operationally, this supports strict end-of-life passivation and fault-tolerant design to reduce explosion-like events.
+    \item Keep-out zones and time-dependent conjunction screening. The abstract positions “keep-out zones and station-keeping choices” as near-term mitigations; your heatmaps provide the justification for making those zones dynamic (updated with time since breakup) rather than static geometric shells.
+    \item Station-keeping policy tied to hazard fields. Since fragments concentrate along repeating arcs in NRHO/L2-like motion, periodic station-keeping can be scheduled to avoid predicted high-density epochs (derived from the 3/6/9/12/60 month evolution you already compute). 
+    \item Design-for-survivability at critical nodes. Gateway-class assets in NRHO-relevant regions should treat the local debris environment as non-uniform and corridor-driven, aligning shielding orientation / operational attitudes with the most probable approach directions inferred from the structured bands in the NRHO heatmaps.
+\end{itemize}
 
-% Subsection text.
+\section{Conclusions}
+\label{sec6}
+This paper assessed the long-term evolution of cislunar debris clouds generated by breakup events in three representative Earth–Moon orbit families (NRHO, DRO, and an $\text{L}_2$ Halo), using EVOLVE-based Monte-Carlo fragment generation and multi-month to multi-year propagation with density heatmaps and lunar-impact flagging.
+Key findings include:
+\begin{itemize}
+    \item Orbit family strongly governs debris fate and localization. For the NRHO case, 629,361 fragments were simulated and at least 130,719 impacted the lunar surface over the full propagation horizon, consistent with the orbit’s close lunar proximity. For the DRO case, 629,085 fragments were simulated and only 7,612 impacted the Moon. For the $\text{L}_2$ halo case, 626,614 fragments were simulated and 49,492 impacted the lunar surface. 
+    \item Transport is structured by CR3BP accessibility and zero-velocity boundaries. The debris clouds do not disperse uniformly; instead, their evolution exhibits corridor-like paths and sharp “walls” consistent with motion being constrained by the Jacobi constant and zero-velocity surfaces/curves. This manifests directly in the NRHO and $\text{L}_2$ halo simulations as fragments “bouncing” off the zero-velocity surfaces visible in the density plots.
+    \item In the DRO case, the evolution trends toward a more global, near-spherical distribution across the Earth–Moon system, enabling less restricted motion. 
+\end{itemize}
 
-% %% Use \subsubsection, \paragraph, \subparagraph commands to 
-% %% start 3rd, 4th and 5th level sections.
-% %% Refer following link for more details.
-% %% https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Sectioning_commands
+This study used an EVOLVE-based size distribution with characteristic fragment lengths sampled between 10 cm and 1 m, with 1000 Monte-Carlo runs per orbit, and initial fragment positions randomized within 500 m of the parent. Fragments were propagated over 3, 6, 9, 12, and 60 months and assessed via heatmaps and lunar/Gateway-region flagging. 
 
-% \subsubsection{Mathematics}
-% %% Inline mathematics is tagged between $ symbols.
-% This is an example for the symbol $\alpha$ tagged as inline mathematics.
+Future work should expand the current analysis in three complementary directions. First, the breakup campaign can be generalized beyond the single representative NRHO, DRO, and $\text{L}_2$ halo cases by sampling additional orbit families, energies, and phasing to quantify the sensitivity of debris transport, corridor occupancy, and lunar-impact likelihood to $E$ and initial geometry. Second, incorporating higher-fidelity perturbations and measurement modeling, such as ephemeris-based dynamics, solar radiation pressure, and realistic optical or radar detection constraints would enable the heatmap products presented here to be translated into trackability, catalog-maintenance, and conjunction-screening performance metrics. Third, the mitigation and end-of-life disposal concepts motivated by these results should be formulated as explicit targeting or optimal-control problems, with objectives such as minimizing $\Delta V$ and time-to-termination while avoiding repeated intersections with high-density transport corridors and the operational volumes associated with NRHO and $\text{L}_2$ trajectories.
 
-% %% Displayed equations can be tagged using various environments. 
-% %% Single line equations can be tagged using the equation environment.
-% \begin{equation}
-% f(x) = (x+a)(x+b)
-% \end{equation}
-
-% %% Unnumbered equations are tagged using starred versions of the environment.
-% %% amsmath package needs to be loaded for the starred version of equation environment.
-% \begin{equation*}
-% f(x) = (x+a)(x+b)
-% \end{equation*}
-
-% %% align or eqnarray environments can be used for multi line equations.
-% %% & is used to mark alignment points in equations.
-% %% \\ is used to end a row in a multiline equation.
-% \begin{align}
-%  f(x) &= (x+a)(x+b) \\
-%       &= x^2 + (a+b)x + ab
-% \end{align}
-
-% \begin{eqnarray}
-%  f(x) &=& (x+a)(x+b) \nonumber\\ %% If equation numbering is not needed for a row use \nonumber.
-%       &=& x^2 + (a+b)x + ab
-% \end{eqnarray}
-
-% %% Unnumbered versions of align and eqnarray
-% \begin{align*}
-%  f(x) &= (x+a)(x+b) \\
-%       &= x^2 + (a+b)x + ab
-% \end{align*}
-
-% \begin{eqnarray*}
-%  f(x)&=& (x+a)(x+b) \\
-%      &=& x^2 + (a+b)x + ab
-% \end{eqnarray*}
-
-%% Refer following link for more details.
-%% https://en.wikibooks.org/wiki/LaTeX/Mathematics
-%% https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics
-
-%% Use a table environment to create tables.
-%% Refer following link for more details.
-%% https://en.wikibooks.org/wiki/LaTeX/Tables
-% \begin{table}[t]%% placement specifier
-% %% Use tabular environment to tag the tabular data.
-% %% https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabular_environment
-% \centering%% For centre alignment of tabular.
-% \begin{tabular}{l c r}%% Table column specifiers
-% %% Tabular cells are separated by &
-%   1 & 2 & 3 \\ %% A tabular row ends with \\
-%   4 & 5 & 6 \\
-%   7 & 8 & 9 \\
-% \end{tabular}
-% %% Use \caption command for table caption and label.
-% \caption{Table Caption}\label{tab1}
-% \end{table}
-
-
-%% Use figure environment to create figures
-%% Refer following link for more details.
-%% https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
-% \begin{figure}[t]%% placement specifier
-% %% Use \includegraphics command to insert graphic files. Place graphics files in 
-% %% working directory.
-% \centering%% For centre alignment of image.
-% \includegraphics[width=0.5\textwidth]{example-image-a}
-% %% Use \caption command for figure caption and label.
-% \caption{Figure Caption}\label{fig2}
-% %% https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics#Importing_external_graphics
-% \end{figure}
-
-
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-% \appendix
-% \section{Example Appendix Section}
-% \label{app1}
-
-% Appendix text.
-
-%% For citations use: 
-%%       \citet{<label>} ==> Lamport [21]
-%%       \citep{<label>} ==> [21]
-%%
-% Example citation, See \citet{lamport94}.
-
-%% If you have bib database file and want bibtex to generate the
-%% bibitems, please use
-%%
-%%  \bibliographystyle{elsarticle-num-names} 
-%%  \bibliography{<your bibdatabase>}
-
-%% else use the following coding to input the bibitems directly in the
-%% TeX file.
-
-%% Refer following link for more details about bibliography and citations.
-%% https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
+\section*{Acknowledgements}
+The authors would like to thank Dr. Yosuke Kawabata from The University of Tokyo for his valuable insights and suggestions during the course of this work.
 
 \begin{thebibliography}{00}
 
@@ -586,8 +541,8 @@ It is also observed that the fragments bounce off the zero-velocity surfaces, wh
 
 \bibitem[Zubrin(2023)]{zubrin2023}
     Zubrin, R.,
-    OP-ED | Lunar Gateway or Moon Direct? 
-    \url{SpaceNews. https://spacenews.com/op-ed-lunar-gateway-or-moon-direct/},
+    \textit{OP-ED | Lunar Gateway or Moon Direct?}, SpaceNews. 
+    \url{https://spacenews.com/op-ed-lunar-gateway-or-moon-direct/},
     2023.
 
 \bibitem[Ross(2022)]{ross2022}
